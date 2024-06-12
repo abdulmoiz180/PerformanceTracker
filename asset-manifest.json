@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/PerformanceTracker/static/css/main.14c1931b.css",
+    "main.js": "/PerformanceTracker/static/js/main.5a17c0c6.js",
+    "index.html": "/PerformanceTracker/index.html",
+    "main.14c1931b.css.map": "/PerformanceTracker/static/css/main.14c1931b.css.map",
+    "main.5a17c0c6.js.map": "/PerformanceTracker/static/js/main.5a17c0c6.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.14c1931b.css",
+    "static/js/main.5a17c0c6.js"
+  ]
+}
