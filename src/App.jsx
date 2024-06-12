@@ -1,10 +1,9 @@
 import React, { useReducer, useEffect, useState } from "react";
 import "./index.css";
 import "./app.css";
+import TextField from "@mui/material/TextField";
 import reducer from "./components/Reducer";
 import WhatsAppIcon from "@mui/icons-material/WhatsApp";
-import { TextField } from "@mui/material";
-
 const initialState = {
   name: "",
   whatsapp: "",
@@ -39,7 +38,7 @@ const App = () => {
   Total Passes: ${state.TotalPasses}\n
   Goals: ${state.Goals}\n
   Assists: ${state.Assists}\n
-  Average Position: ${state.averagePosition}\n`;
+  Average Position: cmd\n`;
 
     let encodedMessage = encodeURIComponent(message);
     let link = `https://api.whatsapp.com/send?phone=${state.whatsapp}&text=${encodedMessage}`;
@@ -50,7 +49,6 @@ const App = () => {
       <div className="container">
         <h1>Performance Sheet</h1>
         <form>
-
           <TextField
             required
             id="outlined-required"
