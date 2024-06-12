@@ -1,4 +1,4 @@
-Sure, here's a draft for your `README.md` file:
+
 
 ```markdown
 # Football Player Performance Tracking App
