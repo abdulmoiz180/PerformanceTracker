@@ -1,38 +1,195 @@
-.App {
+main {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 20px;
+  width: 80%;
+  margin: 50px auto;
+}
+.container h1{
+    color: green;
+    font-size: 44px;
+    font-weight: 600;
+    margin-top: 50px;
+}
+main div {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  border: 1px solid green;
+  color: green;
+  border-radius: 5px;
+  height: 80px;
+  width: 100%;
+  max-width: 150px;
+  transition: 0.8s ease-in-out;
+}
+main div:last-child {
+  flex-direction: column;
+  gap: 5px;
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+main div:hover {
+  cursor: pointer;
+  color: #fff;
+  background-color: green;
+  -webkit-box-shadow: 10px 10px 5px -3px rgba(122, 122, 122, 0.44);
+  -moz-box-shadow: 10px 10px 5px -3px rgba(122, 122, 122, 0.44);
+  box-shadow: 10px 10px 5px -3px rgba(122, 122, 122, 0.44);
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.container {
+  padding: 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+}
+.table {
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+}
+.table div{
+    display: flex;
+    justify-content: space-between;
+}
+.table div strong, p{
+    border: 1px solid #dbdbdb;
+    width: 100%;
+    text-align: center;
+    text-transform: capitalize;
+    padding: 10px;
+}
+.table div strong{
+ font-size: 20px;
+ color: green;
+}
+.table div  p{
+    color: gray;
+}
+.icon {
+  color: green;
+  font-size: 50px !important;
+}
+.disableIcon {
+  font-size: 50px !important;
+  color: gray;
+}
+.icon:hover {
+  cursor: pointer !important;
+}
+.btn_container{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    gap: 10px;
+    justify-content: end;
+  margin: 10px 50px;
+}
+button {
+  border: none;
+  background: transparent;
+}
+.btn_container span{
+ color: #ff5252;
+}
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .container {
+    padding: 10px;
+  }
+  main {
+    width: 100%;
+    margin: 5% 0;
+    justify-content: center;
+    gap: 10px;
+  }
+  main div {
+    height: 80px;
+    max-width: 170px;
+  }
+  main div:last-child {
+    max-width: 200px;
+  }
+  #outlined-required {
+    width : 320px !important;
+  }
+  form {
+    /* width: 100%; */
+    margin-top: 30px;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .table {
+    width: 100%;
+  }
+  .table div strong{
+    font-size: 18px;
+   }
+   .table div strong, p{
+    padding:10px 0px;
+}
+.container h1{
+    font-size: 34px;
+}
+.btn_container{
+   margin: 10px 0;
 }
 
-.App-link {
-  color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    main {
+        width: 100%;
+        justify-content: center;
+        margin: 5% 0;
+      }
+      main div {
+        max-width: 170px;
+      }
+      main div:last-child {
+        max-width: 200px;
+      }
+      
+      form {
+        margin-top: 30px;
+        justify-content: center;
+        gap: 20px;
+      }
+      #outlined-required {
+        width: 240px !important;
+      }
+      
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    main{
+        margin: 20px 0;
+    }
+    main div {
+        max-width: 180px;
+      }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+/* @media only screen and (min-width: 992px) {
+} */
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+/* @media only screen and (min-width: 1200px) {
+} */
+@media only screen and (min-width: 1400px) {
+  
+    main{
+        width: 80%;
+    }
+
 }
