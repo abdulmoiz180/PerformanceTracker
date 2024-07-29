@@ -193,3 +193,13 @@ button {
     }
 
 }
+.card{
+  width: 400px;
+  height: 400px;
+  background-color: #333;
+  color: #fff;
+}
+.cards{
+  display: flex;
+  gap: 20px
+}
